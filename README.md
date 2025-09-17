@@ -1,36 +1,184 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Psikolog Websitesi
 
-## Getting Started
+Modern ve profesyonel bir psikolog websitesi. Next.js, TypeScript ve Tailwind CSS kullanılarak geliştirilmiştir.
 
-First, run the development server:
+## 🌟 Özellikler
 
+- **Modern Tasarım**: Açık tema ile temiz ve profesyonel görünüm
+- **Tek Sayfa Uygulama**: Tüm içerik tek sayfada organize edilmiş
+- **Responsive Tasarım**: Mobil ve masaüstü cihazlarda mükemmel görünüm
+- **Yüksek Kaliteli Görseller**: Unsplash entegrasyonu ile profesyonel fotoğraflar
+- **Modern İkonlar**: Lucide React ile şık ikonlar
+- **Smooth Scrolling**: Sayfa içi geçişler için yumuşak kaydırma
+- **Erişilebilirlik**: WCAG standartlarına uygun tasarım
+
+## 🏗️ Teknolojiler
+
+- **Next.js 15**: React framework
+- **TypeScript**: Tip güvenliği
+- **Tailwind CSS**: Utility-first CSS framework
+- **Lucide React**: Modern ikon kütüphanesi
+- **Unsplash**: Yüksek kaliteli görseller
+
+## 📋 Site Bölümleri
+
+### 🏠 Header
+- Logo ve marka kimliği
+- Navigasyon menüsü
+- Responsive tasarım
+
+### 🌟 Hero Section
+- Etkileyici başlık ve alt başlık
+- Çağrı butonları (CTA)
+- Profesyonel görsel
+
+### 👩‍⚕️ Hakkımda
+- Psikolog bilgileri ve deneyimi
+- Eğitim ve uzmanlık alanları
+- Sertifikalar ve başarılar
+
+### 🛠️ Hizmetler
+- **Bireysel Terapi**: Kişisel sorunlar için birebir destek
+- **Çift Terapisi**: İlişki sorunları ve iletişim problemleri
+- **Travma Terapisi**: EMDR ve travma odaklı yaklaşımlar
+
+### 📞 İletişim
+- İletişim bilgileri
+- Çalışma saatleri
+- İletişim formu
+- Konum bilgisi
+
+### 📄 Footer
+- Telif hakkı bilgileri
+- Sosyal medya linkleri (opsiyonel)
+
+## 🚀 Kurulum
+
+### Gereksinimler
+- Node.js 18.0 veya üzeri
+- npm, yarn, pnpm veya bun
+
+### Adımlar
+
+1. **Projeyi klonlayın:**
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+git clone <repository-url>
+cd psikolog
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+2. **Bağımlılıkları yükleyin:**
+```bash
+npm install
+# veya
+yarn install
+# veya
+pnpm install
+```
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+3. **Geliştirme sunucusunu başlatın:**
+```bash
+npm run dev
+# veya
+yarn dev
+# veya
+pnpm dev
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+4. **Tarayıcınızda açın:**
+[http://localhost:3000](http://localhost:3000) adresine gidin.
 
-## Learn More
+## 📁 Proje Yapısı
 
-To learn more about Next.js, take a look at the following resources:
+```
+psikolog/
+├── public/                 # Statik dosyalar
+├── src/
+│   └── app/
+│       ├── globals.css     # Global stiller
+│       ├── layout.tsx      # Ana layout
+│       └── page.tsx        # Ana sayfa
+├── next.config.ts          # Next.js konfigürasyonu
+├── tailwind.config.ts      # Tailwind konfigürasyonu
+└── package.json           # Proje bağımlılıkları
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 🎨 Tasarım Sistemi
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### Renk Paleti
+- **Primary**: Mavi tonları (#2563eb)
+- **Secondary**: Gri tonları (#f3f4f6)
+- **Accent**: Açık mavi (#dbeafe)
+- **Background**: Beyaz ve açık gri tonları
 
-## Deploy on Vercel
+### Tipografi
+- **Font Family**: System UI font stack
+- **Headings**: Bold, büyük boyutlar
+- **Body**: Normal ağırlık, okunabilir boyut
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 🔧 Konfigürasyon
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+### Next.js Konfigürasyonu
+- Unsplash görselleri için image domain konfigürasyonu
+- TypeScript desteği
+- App Router kullanımı
+
+### Tailwind CSS
+- Custom renk paleti
+- Responsive breakpoints
+- Utility classes
+
+## 📱 Responsive Tasarım
+
+- **Mobile First**: Mobil cihazlar öncelikli tasarım
+- **Breakpoints**: 
+  - sm: 640px
+  - md: 768px
+  - lg: 1024px
+  - xl: 1280px
+
+## 🚀 Deployment
+
+### Vercel (Önerilen)
+1. GitHub'a push yapın
+2. Vercel'e bağlayın
+3. Otomatik deployment
+
+### Diğer Platformlar
+- Netlify
+- AWS Amplify
+- DigitalOcean App Platform
+
+## 🔒 Güvenlik
+
+- HTTPS zorunlu
+- Güvenli form işleme
+- XSS koruması
+- CSRF koruması
+
+## 📈 Performans
+
+- Next.js Image optimizasyonu
+- Lazy loading
+- Code splitting
+- Bundle optimizasyonu
+
+## 🤝 Katkıda Bulunma
+
+1. Fork yapın
+2. Feature branch oluşturun (`git checkout -b feature/amazing-feature`)
+3. Commit yapın (`git commit -m 'Add some amazing feature'`)
+4. Push yapın (`git push origin feature/amazing-feature`)
+5. Pull Request açın
+
+## 📞 İletişim
+
+Proje hakkında sorularınız için:
+- Email: [email@example.com]
+- Website: [website-url]
+
+## 🙏 Teşekkürler
+
+- [Next.js](https://nextjs.org) - React framework
+- [Tailwind CSS](https://tailwindcss.com) - CSS framework
+- [Lucide](https://lucide.dev) - İkon kütüphanesi
+- [Unsplash](https://unsplash.com) - Görseller
